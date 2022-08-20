@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <section class="cardsPrecios">
+        <div class="parent container">
+            <div class="card__onePage card">
+                <div class="content-card">
+                    <div class="titulo">
+                        <h2>
+                            Página web por solo <br><span>$99.990</span>
+                        </h2>
+                    </div>
+                    <div class="listadoDetalles">
+                        <li>
+                            <img src="/iconos/star.svg"> Diseños premium
+                        </li>
+                        <li>
+                            <img src="/iconos/mobile.svg"> Sitio optimizado para móviles
+                        </li>
+                        <li>
+                            <img src="/iconos/form.svg"> Formulario de clientes
+                        </li>
+                        <li>
+                            <img src="/iconos/velocidad.svg"> Servidor de alta velocidad
+                        </li>
+                        <li>
+                            <img src="/iconos/tuerca.svg"> Hosting gratuito por 1 año
+                        </li>
+                        <li>
+                            <img src="/iconos/mail.svg"> Hasta 5 correos corporativos
+                        </li>
+                        <li>
+                            <img src="/iconos/certicado.svg"> Certificado SSL
+                        </li>
+                    </div>
+                    <div class="botones">
+                        <div class="botones__casoDeExito">
+                            <button class="boton-demo" role="button"><span class="text">Demo</span></button>
+                        </div>
+                        <div class="botones__whatsapp">
+                            <img src="/iconos/whatsapp.svg" alt="whatsapp">
+                            <button class="boton-demo" role="button"><span class="text"> ⠀</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__carroDeCompra card">
+                <div class="content-card">
+                    <div class="titulo">
+                        <h2>
+                            Vende en linea por solo <br><span>$129.990</span>
+                        </h2>
+                    </div>
+                    <div class="listadoDetalles">
+                        <li>
+                            <img src="/iconos/21.svg"> Todo lo necesario para liderar el mercado
+                        </li>
+                        <li>
+                            <img src="/iconos/22.svg"> Carrito de compras
+                        </li>
+                        <li>
+                            <img src="/iconos/23.svg"> Pasarela de pagos
+                        </li>
+                        <li>
+                            <img src="/iconos/administracion.svg"> Panel de administración
+                        </li>
+                        <li>
+                            <img src="/iconos/like.svg"> Valoración de productos
+                        </li>
+                        <li>
+                            <img src="/iconos/notificacion.svg"> Notificación por correo
+                        </li>
+                        <li>
+                            <img src="/iconos/seguro.svg"> Protección de pago seguro
+                        </li>
+                    </div>
+
+                    <div class="botones">
+                        <div class="botones__casoDeExito">
+                            <button class="boton-demo" role="button"><span class="text">Demo</span></button>
+                        </div>
+                        <div class="botones__whatsapp">
+                            <img src="/iconos/whatsapp.svg" alt="whatsapp">
+                            <button class="boton-demo" role="button"><span class="text"> ⠀</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trabajemosJuntos">
+        <h2>
+            Trabajemos juntos
+        </h2>
+
+        <div class="trabajemosJuntos__content-imgTelefono">
+            <div class="caja-texto" id="caja-texto">
+                xvideos
+            </div>
+
+            <div class="btn-1">
+
+            </div>
+            <div class="btn-2">
+
+            </div>
+            <div class="btn-3">
+
+            </div>
+            <img src="/img/phone.jpg">
+        </div>
+    </section>
+
+
+
+
+    <script>
+        // Interactions
+        var bubbleEl = document.querySelector('.btn-1');
+        var cajaTexto = document.querySelector('.caja-texto');
+        bubbleEl.addEventListener('click', function (e) {
+
+            cajaTexto.classList.add('swipe');
+            setTimeout(function () { cajaTexto.classList.remove('swipe'); }, 1000);
+        });
+
+        // Interactions
+        var bubbleEl = document.querySelector('.btn-2');
+        var cajaTexto = document.querySelector('.caja-texto');
+        bubbleEl.addEventListener('click', function (e) {
+
+            cajaTexto.classList.add('swipe');
+            setTimeout(function () { cajaTexto.classList.remove('swipe'); }, 1000);
+        });
+
+
+        
+        function cambiarTexto(nBtn,texto) {
+            var bubbleEl = document.querySelector('.btn-'+nBtn);
+            var cajaTexto = document.querySelector('.caja-texto');
+
+            bubbleEl.addEventListener('click', function (e) {
+                cajaTexto.innerHTML = texto;
+                cajaTexto.classList.add('swipe');
+                setTimeout(function () { cajaTexto.classList.remove('swipe'); }, 1000);
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
